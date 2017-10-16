@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_vertical" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/vp_hot"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:canLoop="true"
+                android:orientation="vertical" />
+            <ImageView
+                android:src="#e5e5e5"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:id="@+id/img_top1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    金融财经    "
+                        android:focusable="false"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label1"
+                        android:textColor="@color/state"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    IT互联网    "
+                        android:focusable="false"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label2"
+                        android:textColor="#C6ACF0"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    医疗医学    "
+                        android:focusable="false"
+                        android:layout_marginLeft="33dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label3"
+                        android:textColor="#8FBC8F"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label3" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    大数据    "
+                        android:focusable="false"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label4"
+                        android:textColor="#F1C23C"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    地产建筑    "
+                        android:focusable="false"
+                        android:layout_marginLeft="23dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label5"
+                        android:textColor="#A49E95"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    交通物流    "
+                        android:focusable="false"
+                        android:layout_marginLeft="27dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label6"
+                        android:textColor="#609AE4"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label6" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    文化传播通讯    "
+                        android:focusable="false"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label7"
+                        android:textColor="#DC143C"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label7" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="    教育培训    "
+                        android:focusable="false"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:background="@drawable/my_label8"
+                        android:textColor="#808000"
+                        android:textSize="16sp"
+                        android:id="@+id/text_label8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:src="#e5e5e5"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/img_top2"/>
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView3"
+                android:src="@mipmap/ic_meeting" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="875dp"
+                android:id="@+id/listhot"
+                android:divider="@null"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_erweima"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.meeting.ErweimaActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/textErMeetName"
+        android:layout_above="@+id/Erweima"
+        android:layout_marginBottom="51dp"
+        android:layout_alignEnd="@+id/Erweima"
+        android:layout_alignStart="@+id/Erweima" />
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/Erweima"
+        android:layout_weight="0.31"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="返回首页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonApplyConfirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/teal"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:text="注：扫描此二维码可进行签到、投票、问卷等会议互动　,　请发起人保存。"
+        android:textSize="15sp"
+        android:layout_below="@+id/Erweima"
+        android:layout_alignStart="@+id/Erweima"
+        android:layout_alignEnd="@+id/Erweima" />
+</RelativeLayout>

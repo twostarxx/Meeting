@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.meeting.TalkActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="讨 论 区"
+        android:background="#EEC486"
+        style="@style/FragmentTitle"
+        android:id="@+id/textView4" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:id="@+id/listtalk"
+        android:layout_weight="1" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/img_border1"
+        android:src="@color/border" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/border"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="333dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black_overlay"
+            android:hint="说说你的看法..."
+            android:background="@color/white"
+            android:id="@+id/edit_talk" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_send"
+            android:background="#00000000"
+            android:src="@mipmap/ic_send" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

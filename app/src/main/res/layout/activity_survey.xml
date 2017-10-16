@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_survey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.meeting.SurveyActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="组 织 会 议"
+        android:background="@color/teal"
+        style="@style/FragmentTitle"
+        android:id="@+id/textView4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
+        android:id="@+id/scrollView2"
+        android:layout_weight="1.06">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView15"
+                    android:layout_marginLeft="1dp"
+                    android:src="@mipmap/ic_write1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设计问卷"
+                    android:textColor="@color/teal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:id="@+id/textView5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_width="315dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="415dp">
+
+                <TextView
+                    android:text="题目"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textSurveyQuestion01" />
+
+                <EditText
+                    android:hint="请输入题目"
+                    style="@style/meetApplyTextEdit"
+                    android:id="@+id/editSurveyQuestion01" />
+
+                <TextView
+                    android:text="答案1"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textSurveyQ01A01" />
+
+                <EditText
+                    android:hint="请输入答案1"
+                    style="@style/meetApplyTextEdit"
+                    android:id="@+id/editSurveyQ01A01" />
+
+                <TextView
+                    android:text="答案2"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textSurveyQ01A02" />
+
+                <EditText
+                    android:hint="请输入答案2"
+                    style="@style/meetApplyTextEdit"
+                    android:id="@+id/editSurveyQ01A02" />
+
+                <TextView
+                    android:text="答案3"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textSurveyQ01A03" />
+
+                <EditText
+                    android:hint="请输入答案3"
+                    style="@style/meetApplyTextEdit"
+                    android:id="@+id/editSurveyQ01A03" />
+
+                <TextView
+                    android:text="答案4"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textSurveyQ01A04" />
+
+                <EditText
+                    android:hint="请输入答案4"
+                    style="@style/meetApplyTextEdit"
+                    android:id="@+id/editSurveyQ01A04" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="生成二维码"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/teal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSurvey" />
+
+</LinearLayout>

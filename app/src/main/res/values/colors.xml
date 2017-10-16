@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#acc1e7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="teal">#90B6CD</color>
+    <color name="blue">#EF9884</color>
+    <color name="grey">#607D8B</color>
+    <color name="orange">#EA5330</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="hui">#5e5e5e</color>
+    <color name="state">#FA8072</color>
+    <color name="border">#e5e5e5</color>
+    <color name="choose">#DC143C</color>
+</resources>

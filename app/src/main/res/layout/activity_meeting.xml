@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.meeting.MeetingActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="@color/blue"
+        android:layout_height="55dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/btn_back"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目介绍"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:id="@+id/text_meet"
+            android:layout_weight="0.67" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_collect"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="110dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@mipmap/ic_uncollect" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:id="@+id/btn_share"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@mipmap/ic_share" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="552dp"
+        android:id="@+id/scroll_meet"
+        android:fillViewport="false"
+        android:layout_weight="1.06" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="0.10">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/img_detail" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/meet_title"
+                        android:gravity="left"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:layout_marginTop="30dp"
+                        android:gravity="left"
+                        android:textSize="14sp"
+                        android:id="@+id/meet_time" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:gravity="left"
+                        android:textSize="14sp"
+                        android:id="@+id/meet_address" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:gravity="left"
+                        android:textSize="14sp"
+                        android:id="@+id/meet_price" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7sp"
+                        android:text="New Text"
+                        android:gravity="left"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:id="@+id/meet_state" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:text="New Text"
+                android:id="@+id/meet_label" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_border1"
+                android:src="#e2dcd7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主办方"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/meet_holder" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="#e2dcd7"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/meet_line1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/holder_detail" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_border2"
+                android:src="#e2dcd7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议嘉宾"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/meet_guest" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="#e2dcd7"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/meet_line2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/guest_detail" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_border3"
+                android:src="#e2dcd7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议内容"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/meet_content" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="#e2dcd7"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/meet_line3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/content_detail" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_border4"
+                android:src="#e2dcd7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参会须知"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/meet_extra" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="#e2dcd7"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/meet_line4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载参会指南"
+                android:textColor="@color/blue"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/extra_detail" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_border5"
+                android:src="#e2dcd7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="购票报名"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@color/blue"
+        android:id="@+id/text_purchase" />
+
+</LinearLayout>

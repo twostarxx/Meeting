@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="331dp"
+            android:goIcon="@null"
+            android:closeIcon="@drawable/ic_close"
+            android:layout_height="wrap_content"
+            android:queryHint="请输入搜索内容"
+            android:layout_weight="0.57"
+            android:searchIcon="@drawable/ic_search"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_scan"
+            android:background="@null"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_scan" />
+
+    </LinearLayout>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/top_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/layFrame_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_conf_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.meeting.ConfApplyActivity"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="组 织 会 议"
+        android:background="@color/teal"
+        style="@style/FragmentTitle"
+        android:id="@+id/textView4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
+        android:layout_weight="1.21">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView15"
+                    android:src="@mipmap/ic_write1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本信息"
+                    android:textColor="@color/teal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:id="@+id/textView5" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="会议名"
+                        android:layout_marginTop="15dp"
+                        style="@style/meetApplyTextTitle"
+                        android:id="@+id/textMeetApplyName"
+                        android:layout_width="match_parent" />
+
+                    <TextView
+                        android:text="会议时间"
+                        android:layout_marginTop="18dp"
+                        style="@style/meetApplyTextTitle"
+                        android:id="@+id/textMeetApplyTime"
+                        android:layout_width="84dp" />
+
+                    <TextView
+                        android:text="会议地点"
+                        android:layout_marginTop="18dp"
+                        style="@style/meetApplyTextTitle"
+                        android:id="@+id/textMeetApplyAddress"
+                        android:layout_width="86dp" />
+
+                    <TextView
+                        android:text="会议价格"
+                        android:layout_marginTop="18dp"
+                        style="@style/meetApplyTextTitle"
+                        android:id="@+id/textMeetApplyPrice"
+                        android:layout_width="88dp" />
+
+                    <TextView
+                        android:text="主办方"
+                        android:layout_marginTop="18dp"
+                        style="@style/meetApplyTextTitle"
+                        android:id="@+id/textMeetApplySponsor"
+                        android:layout_width="84dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="233dp"
+                    android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:hint = "请输入会议名（必填）"
+                        style="@style/meetApplyTextEdit"
+                        android:id="@+id/editMeetApplyName" />
+
+                    <EditText
+                        android:hint="请输入会议时间（必填）"
+                        style="@style/meetApplyTextEdit"
+                        android:id="@+id/editMeetApplyTime" />
+
+                    <EditText
+                        android:hint="请输入会议地点（必填）"
+                        style="@style/meetApplyTextEdit"
+                        android:id="@+id/editMeetApplyAddress" />
+
+                    <EditText
+                        style="@style/meetApplyTextEdit"
+                        android:hint="请输入会议价格"
+                        android:id="@+id/editMeetApplyPrice" />
+
+                    <EditText
+                        android:hint="请输入主办方"
+                        style="@style/meetApplyTextEdit"
+                        android:id="@+id/editMeetApplySponsor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView16"
+                    android:layout_marginLeft="1dp"
+                    android:src="@mipmap/ic_write1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="具体信息"
+                    android:textColor="@color/teal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:id="@+id/textView6" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="主要内容"
+                    style="@style/meetApplyTextTitle"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textMeetApplyContent" />
+
+                <EditText
+                    style="@style/meetApplyTextEdit"
+                    android:hint="请输入主要内容"
+                    android:id="@+id/editMeetApplyContent"
+                    android:layout_width="324dp" />
+
+                <TextView
+                    android:text="会议嘉宾"
+                    android:layout_marginTop="10dp"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textMeetApplyGuest" />
+
+                <EditText
+                    style="@style/meetApplyTextEdit"
+                    android:hint="请输入会议嘉宾"
+                    android:id="@+id/editMeetApplyGuest"
+                    android:layout_width="324dp" />
+
+                <TextView
+                    android:text="参会须知"
+                    android:layout_marginTop="10dp"
+                    style="@style/meetApplyTextTitle"
+                    android:id="@+id/textMeetApplyIntroduction" />
+
+                <EditText
+                    style="@style/meetApplyTextEdit"
+                    android:hint="请输入参会注意事项"
+                    android:id="@+id/editMeetApplyIntroduction"
+                    android:layout_width="324dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="下一步"
+        android:background="@color/teal"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMeetApply" />
+
+
+</LinearLayout>
